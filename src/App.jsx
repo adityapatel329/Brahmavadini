@@ -1,30 +1,44 @@
-import NavigationBar from './components/NavigationBar/NavigationBar';
-import Footer from './components/Footer/Footer';
-import HeroBanner from './components/HeroBanner/HeroBanner';
-import Bestsellers from './components/Bestsellers/Bestsellers';
-import Essence from './components/Essence/Essence';
-import Founder from './components/Founder/Founder';
-import YagyaKundSpecials from './components/YagyaKundSpecials/YagyaKundSpecials';
-import Reviews from './components/Reviews/Reviews';
-import Contact from './components/Contact/Contact';
-import './App.css';
+import React from "react";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import NavigationBar from "./components/NavigationBar/NavigationBar";
+import Footer from "./components/Footer/Footer";
+import HeroBanner from "./components/HeroBanner/HeroBanner";
+import Bestsellers from "./components/Bestsellers/Bestsellers";
+import Essence from "./components/Essence/Essence";
+import Founder from "./components/Founder/Founder";
+import YagyaKundSpecials from "./components/YagyaKundSpecials/YagyaKundSpecials";
+import Reviews from "./components/Reviews/Reviews";
+import Contact from "./components/Contact/Contact";
+import "./styles.css";
 
-function App() {
+// Layout for the main page components
+function HomePageLayout() {
   return (
-    <>
-      <div className="announcement-bar section-gap">
-        Free Shipping on Orders Above ₹999 | Same Day Dispatch
-      </div>
-      <NavigationBar />
+    <div className="mx-auto max-w-7xl px-4 py-8 sm:px-6 sm:py-12 lg:px-8">
       <HeroBanner />
       <Bestsellers />
       <Essence />
       <Founder />
       <YagyaKundSpecials />
       <Reviews />
-      <Contact />
-      <Footer />
-    </>
+    </div>
+  );
+}
+
+function App() {
+  return (
+    <Router>
+      <div className="flex flex-col min-h-screen">
+        <NavigationBar />
+        <main className="flex-grow">
+          <Routes>
+            <Route path="/contact" element={<Contact />} />
+            <Route path="/" element={<HomePageLayout />} />
+          </Routes>
+        </main>
+        <Footer />
+      </div>
+    </Router>
   );
 }
 
