@@ -1,12 +1,12 @@
-import NavigationBar from './components/NavigationBar';
-import Footer from './components/Footer';
-import HeroBanner from './components/HeroBanner';
-import Bestsellers from './components/Bestsellers';
-import Essence from './components/Essence';
-import Founder from './components/Founder';
-import YagyaKundSpecials from './components/YagyaKundSpecials';
-import Reviews from './components/Reviews';
-import Contact from './components/Contact';
+import NavigationBar from './components/NavigationBar/NavigationBar';
+import Footer from './components/Footer/Footer';
+import HeroBanner from './components/HeroBanner/HeroBanner';
+import Bestsellers from './components/Bestsellers/Bestsellers';
+import Essence from './components/Essence/Essence';
+import Founder from './components/Founder/Founder';
+import YagyaKundSpecials from './components/YagyaKundSpecials/YagyaKundSpecials';
+import Reviews from './components/Reviews/Reviews';
+import Contact from './components/Contact/Contact';
 import './App.css';
 
 function App() {

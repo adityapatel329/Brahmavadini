@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import './NavigationBar.css';
 import { FaUser, FaHeart, FaShoppingBag, FaChevronDown, FaSearch, FaBars } from 'react-icons/fa';
-import MegaMenu from './MegaMenu';
+import MegaMenu from './MegaMenu/MegaMenu';
 
 const NavigationBar = () => {
   const [megaMenuOpen, setMegaMenuOpen] = useState(false);
