@@ -1,0 +1,156 @@
+.mega-menu-root {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100vw;
+  display: flex;
+  flex-direction: row;
+  background: #fff;
+  box-shadow: 0px 4.5px 10px 0px rgba(0,0,0,0.05), 0px 1.9px 4px 0px rgba(0,0,0,0.05), 0px 0.7px 1.4px 0px rgba(0,0,0,0.07);
+  border-radius: 0 0 8px 8px;
+  z-index: 100;
+  min-height: 480px;
+}
+
+.mega-menu-categories {
+  flex: 1.2;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding: 32px 0 32px 32px;
+  background: #fff;
+}
+
+.mega-menu-category {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  background: #fff;
+  border-radius: 8px;
+  padding: 16px 24px;
+  cursor: pointer;
+  transition: background 0.2s;
+  font-family: 'Inter', sans-serif;
+}
+.mega-menu-category.active, .mega-menu-category:hover {
+  background: #FFF6E9;
+}
+.mega-menu-category-icon {
+  font-size: 24px;
+  margin-right: 8px;
+}
+.mega-menu-category-title {
+  font-size: 18px;
+  font-weight: 600;
+  color: #1D2A3E;
+}
+.mega-menu-category-desc {
+  font-size: 14px;
+  color: #3A4256;
+}
+.mega-menu-arrow {
+  margin-left: auto;
+  color: #3A4256;
+  font-size: 20px;
+}
+
+.mega-menu-products {
+  flex: 1.5;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding: 32px 0;
+  background: #fff;
+  border-left: 1px solid #CAD3E2;
+  border-right: 1px solid #CAD3E2;
+  align-items: flex-start;
+}
+.mega-menu-product {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  background: #fff;
+  border-radius: 8px;
+  padding: 12px 24px;
+  cursor: pointer;
+  transition: background 0.2s;
+  font-family: 'Inter', sans-serif;
+}
+.mega-menu-product.active, .mega-menu-product:hover {
+  background: #FFF6E9;
+}
+.mega-menu-product-img {
+  width: 56px;
+  height: 56px;
+  border-radius: 8px;
+  object-fit: cover;
+}
+.mega-menu-product-title {
+  font-size: 16px;
+  color: #1D2A3E;
+  font-weight: 500;
+}
+
+.mega-menu-main-product {
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 32px 32px 32px 32px;
+  background: #fff;
+  min-width: 312px;
+}
+.mega-menu-main-img {
+  width: 100%;
+  max-width: 312px;
+  border-radius: 8px;
+  margin-bottom: 16px;
+}
+.mega-menu-main-title {
+  font-size: 20px;
+  font-weight: 600;
+  color: #1D2A3E;
+  margin-bottom: 8px;
+}
+.mega-menu-main-prices {
+  display: flex;
+  gap: 12px;
+  align-items: baseline;
+  margin-bottom: 4px;
+}
+.mega-menu-main-mrp {
+  font-size: 16px;
+  color: #888;
+  text-decoration: line-through;
+}
+.mega-menu-main-price {
+  font-size: 18px;
+  color: #1D2A3E;
+  font-weight: 600;
+}
+.mega-menu-main-save {
+  color: #2EBD85;
+  font-size: 15px;
+  margin-bottom: 16px;
+}
+.mega-menu-main-btn {
+  background: #E59D3E;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  padding: 10px 32px;
+  font-size: 16px;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+  margin-top: 12px;
+  transition: background 0.2s;
+}
+.mega-menu-main-btn:hover {
+  background: #d18a2e;
+}
+.mega-menu-main-btn-icon {
+  font-size: 18px;
+} 

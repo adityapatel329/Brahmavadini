@@ -1,0 +1,23 @@
+body {
+  margin: 0;
+  padding: 0;
+  background: #f7f7fa;
+  font-family: 'Inter', sans-serif;
+}
+
+.announcement-bar {
+  width: 100%;
+  background: #E59D3E;
+  color: #fff;
+  text-align: center;
+  font-family: 'Inter', sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  padding: 10px 0 8px 0;
+  margin: 0;
+}
+
+.section-gap {
+  margin-top: 0;
+  margin-bottom: 0;
+}

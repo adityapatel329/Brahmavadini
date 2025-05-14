@@ -1,0 +1,131 @@
+.bestsellers-root {
+  background: #111C2C;
+  padding: 64px 0 48px 0;
+  color: #fff;
+  width: 100%;
+}
+.bestsellers-header {
+  text-align: center;
+  margin-bottom: 32px;
+}
+.bestsellers-title {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 48px;
+  font-weight: 600;
+  color: #EAD7B7;
+  margin-bottom: 8px;
+}
+.bestsellers-subtitle {
+  font-family: 'Inter', sans-serif;
+  font-size: 16px;
+  color: #EAD7B7;
+}
+.bestsellers-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 32px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.bestseller-card {
+  background: #181F2B;
+  border: 1.5px solid #E59D3E;
+  border-radius: 12px;
+  padding: 18px 18px 16px 18px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+  position: relative;
+  min-height: 420px;
+}
+.bestseller-img-wrap {
+  width: 100%;
+  position: relative;
+  margin-bottom: 16px;
+}
+.bestseller-img {
+  width: 100%;
+  border-radius: 8px;
+  object-fit: cover;
+  border: 1px solid #EAD7B7;
+}
+.bestseller-tag {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background: #FFFBEB;
+  color: #E59D3E;
+  font-size: 14px;
+  font-family: 'Inter', sans-serif;
+  font-weight: 600;
+  border-radius: 4px;
+  padding: 6px 12px;
+  z-index: 2;
+}
+.bestseller-title2 {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 22px;
+  font-weight: 600;
+  color: #fff;
+  margin-bottom: 4px;
+}
+.bestseller-subtitle2 {
+  font-family: 'Inter', sans-serif;
+  font-size: 15px;
+  color: #EAD7B7;
+  margin-bottom: 16px;
+}
+.bestseller-bottom-row {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: auto;
+}
+.bestseller-price {
+  font-family: 'Inter', sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  color: #fff;
+}
+.bestseller-btn {
+  background: #E59D3E;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  padding: 8px 18px;
+  font-size: 15px;
+  font-family: 'Inter', sans-serif;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+.bestseller-btn:hover {
+  background: #d18a2e;
+}
+
+@media (max-width: 1024px) {
+  .bestsellers-title {
+    font-size: 32px;
+  }
+  .bestsellers-grid {
+    gap: 18px;
+  }
+}
+@media (max-width: 768px) {
+  .bestsellers-root {
+    padding: 32px 0 24px 0;
+  }
+  .bestsellers-title {
+    font-size: 22px;
+  }
+  .bestsellers-grid {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+  .bestseller-card {
+    min-height: 320px;
+    padding: 12px 8px 12px 8px;
+  }
+} 
