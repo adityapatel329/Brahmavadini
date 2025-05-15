@@ -1,24 +1,36 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
+import axios from 'axios';
 import './Founder.css';
 import founderImg from '../../assets/founder.png';
 
 function Founder() {
+  const [founder, setFounder] = useState(null);
+
+  useEffect(() => {
+    axios.get('http://localhost:1337/api/founders?populate=*')
+      .then(res => {
+        setFounder(res.data.data[0]);
+      })
+      .catch(err => console.error(err));
+  }, []);
+
+  if (!founder) return <div>Loading...</div>;
+
+  // Use backend image if available, otherwise fallback to local asset
+  let imageUrl = founder.Founder_Image && founder.Founder_Image.url
+    ? `http://localhost:1337${founder.Founder_Image.url}`
+    : founderImg;
+
   return (
     <section className="founder-root">
       <div className="founder-img-wrap">
-        <img src={founderImg} alt="Swami Rupeshwaranand" className="founder-img" />
+        <img src={imageUrl} alt={founder.Founder_Name} className="founder-img" />
       </div>
       <div className="founder-content">
-        <h2 className="founder-title">Guided By Wisdom. Grounded in Ritual.</h2>
-        <div className="founder-name">Swami Rupeshwaranand</div>
-        <div className="founder-role">Founder, Brahvandini</div>
-        <div className="founder-desc">
-          A lifelong seeker and teacher of Vedic sciences, Swami Rupeshwaranand established Brahvandini to make sacred rituals accessible to every home. His vision blends ancient wisdom with modern simplicity, guiding spiritual aspirants through carefully energized pooja essentials.<br /><br />
-          With over three decades of deep spiritual practice and study, Swamiji's approach combines traditional Vedic knowledge with contemporary understanding, making ancient practices relevant and meaningful for modern life.
-        </div>
-        <div className="founder-quote">
-          "Rituals are not routines — they are reminders of the divine within."
-        </div>
+        <h2 className="founder-title">{founder.Title_text}</h2>
+        <div className="founder-name">{founder.Founder_Name}</div>
+        <div className="founder-role">{founder.Founder_Skills}</div>
+        <div className="founder-desc">{founder.Founder_description}</div>
         <button className="founder-btn">Know More</button>
       </div>
     </section>
