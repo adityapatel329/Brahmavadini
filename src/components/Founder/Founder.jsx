@@ -1,11 +1,12 @@
 import React from 'react';
 import './Founder.css';
+import founderImage from '../../assets/founder.png';
 
 export default function Founder() {
   return (
     <section className="founder-root">
       <div className="founder-img-wrap">
-        <img src="/src/assets/swami-image.png" alt="Swami Rupeshwaranand" className="founder-img" />
+        <img src={founderImage} alt="Swami Rupeshwaranand" className="founder-img" />
       </div>
       <div className="founder-content">
         <h2 className="founder-title">Guided By Wisdom. Grounded in Ritual.</h2>

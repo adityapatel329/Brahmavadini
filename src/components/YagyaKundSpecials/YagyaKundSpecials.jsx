@@ -1,9 +1,11 @@
 import React, { useRef, useState } from 'react';
 import './YagyaKundSpecials.css';
+import yagyaKund1 from '../../assets/yagyakund1.png';
+import yagyaKund2 from '../../assets/yagyakund2.png';
 
 const specials = [
   {
-    image: '/src/assets/bestseller-1.png',
+    image: yagyaKund1,
     tag: 'Premium Collection',
     title: 'Octagonal Vedic Yagna Kund',
     subtitle: 'Used in advanced Tantric rituals',
@@ -17,7 +19,7 @@ const specials = [
     button: 'Shop Now',
   },
   {
-    image: '/src/assets/bestseller-2.png',
+    image: yagyaKund2,
     tag: 'Featured',
     title: 'Pyramid Shakti Kund',
     subtitle: 'Energized with Vedic mantras',

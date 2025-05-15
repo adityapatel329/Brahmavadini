@@ -1,9 +1,12 @@
 import React from 'react';
 import './Bestsellers.css';
+import bestseller1 from '../../assets/bestseller1.png';
+import bestseller2 from '../../assets/bestseller2.png';
+import bestseller3 from '../../assets/bestseller3.png';
 
 const products = [
   {
-    image: '/src/assets/bestseller-1.png',
+    image: bestseller1,
     tag: 'Most Loved',
     title: 'Premium Havan Kund',
     subtitle: 'Traditional Copper Ritual Set',
@@ -11,7 +14,7 @@ const products = [
     button: 'Add to cart',
   },
   {
-    image: '/src/assets/bestseller-2.png',
+    image: bestseller2,
     tag: '',
     title: 'Tarpan Set',
     subtitle: 'Sacred Items for ancestral offerings',
@@ -19,7 +22,7 @@ const products = [
     button: 'Add to cart',
   },
   {
-    image: '/src/assets/bestseller-3.png',
+    image: bestseller3,
     tag: '',
     title: 'Accessories',
     subtitle: 'Essential spiritual accompaniments',
