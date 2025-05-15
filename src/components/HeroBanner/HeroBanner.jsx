@@ -1,5 +1,6 @@
 import React, { useEffect, useRef, useState } from 'react';
 import './HeroBanner.css';
+import heroImage from '../../assets/hero.png';
 
 const slides = [
   {
@@ -11,7 +12,7 @@ const slides = [
       { icon: '🕉️', label: 'Blessed' },
     ],
     bg: '/src/assets/hero-bg.png',
-    product: '/src/assets/hero-product.png',
+    product: heroImage,
     cta: [
       { label: 'Shop Now', primary: true },
       { label: 'Learn More', primary: false },
