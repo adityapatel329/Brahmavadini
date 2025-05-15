@@ -1,52 +1,52 @@
 import React, { useRef, useState } from 'react';
 import './YagyaKundSpecials.css';
 
-const specials = [
-  {
-    image: '/src/assets/bestseller-1.png',
-    tag: 'Premium Collection',
-    title: 'Octagonal Vedic Yagna Kund',
-    subtitle: 'Used in advanced Tantric rituals',
-    features: [
-      'Copper-lined for energy flow',
-      'Hand-crafted by temple artisans',
-      'Ideal for full-moon Havan',
-    ],
-    price: '₹12,999',
-    oldPrice: '₹15,999',
-    button: 'Shop Now',
-  },
-  {
-    image: '/src/assets/bestseller-2.png',
-    tag: 'Featured',
-    title: 'Pyramid Shakti Kund',
-    subtitle: 'Energized with Vedic mantras',
-    features: [
-      'Perfect for Hanuman Yajnas',
-      'Sacred geometry enhanced',
-      'Includes ritual guidelines',
-    ],
-    price: '₹9,999',
-    oldPrice: '₹11,999',
-    button: 'Shop Now',
-  },
-  {
-    image: '/src/assets/bestseller-3.png',
-    tag: 'Eco-Friendly',
-    title: 'Round Lepa Mitti Kund',
-    subtitle: 'For Navagraha pacification',
-    features: [
-      '100% natural clay',
-      'Traditional craftsmanship',
-      'Biodegradable design',
-    ],
-    price: '₹4,999',
-    oldPrice: '₹6,999',
-    button: 'Shop Now',
-  },
-];
+function YagyaKundSpecials() {
+  const specials = [
+    {
+      image: '/src/assets/bestseller-1.png',
+      tag: 'Premium Collection',
+      title: 'Octagonal Vedic Yagna Kund',
+      subtitle: 'Used in advanced Tantric rituals',
+      features: [
+        'Copper-lined for energy flow',
+        'Hand-crafted by temple artisans',
+        'Ideal for full-moon Havan',
+      ],
+      price: '₹12,999',
+      oldPrice: '₹15,999',
+      button: 'Shop Now',
+    },
+    {
+      image: '/src/assets/bestseller-2.png',
+      tag: 'Featured',
+      title: 'Pyramid Shakti Kund',
+      subtitle: 'Energized with Vedic mantras',
+      features: [
+        'Perfect for Hanuman Yajnas',
+        'Sacred geometry enhanced',
+        'Includes ritual guidelines',
+      ],
+      price: '₹9,999',
+      oldPrice: '₹11,999',
+      button: 'Shop Now',
+    },
+    {
+      image: '/src/assets/bestseller-3.png',
+      tag: 'Eco-Friendly',
+      title: 'Round Lepa Mitti Kund',
+      subtitle: 'For Navagraha pacification',
+      features: [
+        '100% natural clay',
+        'Traditional craftsmanship',
+        'Biodegradable design',
+      ],
+      price: '₹4,999',
+      oldPrice: '₹6,999',
+      button: 'Shop Now',
+    },
+  ];
 
-export default function YagyaKundSpecials() {
   const [current, setCurrent] = useState(0);
   const scrollRef = useRef(null);
 
@@ -99,4 +99,6 @@ export default function YagyaKundSpecials() {
       </div>
     </section>
   );
-} 
+}
+
+export default YagyaKundSpecials; 

@@ -1,35 +1,39 @@
 import React from 'react';
 import './Bestsellers.css';
 
-const products = [
-  {
-    image: '/src/assets/bestseller-1.png',
-    tag: 'Most Loved',
-    title: 'Premium Havan Kund',
-    subtitle: 'Traditional Copper Ritual Set',
-    price: '₹2,499',
-    button: 'Add to cart',
-  },
-  {
-    image: '/src/assets/bestseller-2.png',
-    tag: '',
-    title: 'Tarpan Set',
-    subtitle: 'Sacred Items for ancestral offerings',
-    price: '₹6,499',
-    button: 'Add to cart',
-  },
-  {
-    image: '/src/assets/bestseller-3.png',
-    tag: '',
-    title: 'Accessories',
-    subtitle: 'Essential spiritual accompaniments',
-    price: '₹1,499',
-    button: 'Add to cart',
-  },
-  // Add more products as needed
-];
+import bestseller1 from '../../assets/bestseller-1.png';
+import bestseller2 from '../../assets/bestseller-2.png';
+import bestseller3 from '../../assets/bestseller-3.png';
 
-export default function Bestsellers() {
+function Bestsellers() {
+  const products = [
+    {
+      image: bestseller1,
+      tag: 'Most Loved',
+      title: 'Premium Havan Kund',
+      subtitle: 'Traditional Copper Ritual Set',
+      price: '₹2,499',
+      button: 'Add to cart',
+    },
+    {
+      image: bestseller2,
+      tag: '',
+      title: 'Tarpan Set',
+      subtitle: 'Sacred Items for ancestral offerings',
+      price: '₹6,499',
+      button: 'Add to cart',
+    },
+    {
+      image: bestseller3,
+      tag: '',
+      title: 'Accessories',
+      subtitle: 'Essential spiritual accompaniments',
+      price: '₹1,499',
+      button: 'Add to cart',
+    },
+    // Add more products as needed
+  ];
+
   return (
     <section className="bestsellers-root">
       <div className="bestsellers-header">
@@ -54,4 +58,6 @@ export default function Bestsellers() {
       </div>
     </section>
   );
-} 
+}
+
+export default Bestsellers; 

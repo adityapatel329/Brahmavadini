@@ -1,30 +1,30 @@
 import React from 'react';
 import './Essence.css';
 
-const essence = [
-  {
-    icon: '🕉️',
-    title: 'SACREDNESS',
-    desc: 'Rituals with purity and reverence, honoring ancient traditions',
-  },
-  {
-    icon: '📖',
-    title: 'WISDOM',
-    desc: 'Vedic knowledge passed through generations of tradition',
-  },
-  {
-    icon: '👁️',
-    title: 'CLARITY',
-    desc: 'Transparent, spiritual-driven curation for authentic practice',
-  },
-  {
-    icon: '🍃',
-    title: 'CONSCIOUS LIVING',
-    desc: 'Elevating life through mindful practices and awareness',
-  },
-];
+function Essence() {
+  const essence = [
+    {
+      icon: '🕉️',
+      title: 'SACREDNESS',
+      desc: 'Rituals with purity and reverence, honoring ancient traditions',
+    },
+    {
+      icon: '📖',
+      title: 'WISDOM',
+      desc: 'Vedic knowledge passed through generations of tradition',
+    },
+    {
+      icon: '👁️',
+      title: 'CLARITY',
+      desc: 'Transparent, spiritual-driven curation for authentic practice',
+    },
+    {
+      icon: '🍃',
+      title: 'CONSCIOUS LIVING',
+      desc: 'Elevating life through mindful practices and awareness',
+    },
+  ];
 
-export default function Essence() {
   return (
     <section className="essence-root">
       <h2 className="essence-title">The Brahvandini Essence</h2>
@@ -42,4 +42,6 @@ export default function Essence() {
       </div>
     </section>
   );
-} 
+}
+
+export default Essence; 

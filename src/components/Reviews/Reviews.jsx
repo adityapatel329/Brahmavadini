@@ -1,28 +1,28 @@
 import React from 'react';
 import './Reviews.css';
 
-const reviews = [
-  {
-    name: 'Aarti V.',
-    location: 'Gujarat',
-    quote: '"Since using the Trikal Sandhya set, my mornings are calmer and spiritually aligned."',
-    avatar: 'https://randomuser.me/api/portraits/women/1.jpg',
-  },
-  {
-    name: 'Aarti V.',
-    location: 'Gujarat',
-    quote: '"Hanuman Ji\'s presence felt real during my daily havan."',
-    avatar: 'https://randomuser.me/api/portraits/women/1.jpg',
-  },
-  {
-    name: 'Aarti V.',
-    location: 'Gujarat',
-    quote: '"The Mantra Saadhna set helped me reconnect with my path."',
-    avatar: 'https://randomuser.me/api/portraits/women/1.jpg',
-  },
-];
+function Reviews() {
+  const reviews = [
+    {
+      name: 'Aarti V.',
+      location: 'Gujarat',
+      quote: '"Since using the Trikal Sandhya set, my mornings are calmer and spiritually aligned."',
+      avatar: 'https://randomuser.me/api/portraits/women/1.jpg',
+    },
+    {
+      name: 'Aarti V.',
+      location: 'Gujarat',
+      quote: '"Hanuman Ji\'s presence felt real during my daily havan."',
+      avatar: 'https://randomuser.me/api/portraits/women/1.jpg',
+    },
+    {
+      name: 'Aarti V.',
+      location: 'Gujarat',
+      quote: '"The Mantra Saadhna set helped me reconnect with my path."',
+      avatar: 'https://randomuser.me/api/portraits/women/1.jpg',
+    },
+  ];
 
-export default function Reviews() {
   return (
     <section className="reviews-root section-gap">
       <div className="reviews-header">
@@ -46,4 +46,6 @@ export default function Reviews() {
       </div>
     </section>
   );
-} 
+}
+
+export default Reviews; 

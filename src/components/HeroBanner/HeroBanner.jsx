@@ -1,26 +1,26 @@
 import React, { useEffect, useRef, useState } from 'react';
 import './HeroBanner.css';
 
-const slides = [
-  {
-    title: 'Sacred Hawan Kunds for Every Ritual',
-    subtitle: 'Handcrafted, spiritual, and vastu-aligned.',
-    features: [
-      { icon: '🌞', label: 'Authentic' },
-      { icon: '🔨', label: 'Handcrafted' },
-      { icon: '🕉️', label: 'Blessed' },
-    ],
-    bg: '/src/assets/hero-bg.png',
-    product: '/src/assets/hero-product.png',
-    cta: [
-      { label: 'Shop Now', primary: true },
-      { label: 'Learn More', primary: false },
-    ],
-  },
-  // Add more slides here if needed
-];
+function HeroBanner() {
+  const slides = [
+    {
+      title: 'Sacred Hawan Kunds for Every Ritual',
+      subtitle: 'Handcrafted, spiritual, and vastu-aligned.',
+      features: [
+        { icon: '🌞', label: 'Authentic' },
+        { icon: '🔨', label: 'Handcrafted' },
+        { icon: '🕉️', label: 'Blessed' },
+      ],
+      bg: '/src/assets/hero-bg.png',
+      product: '/src/assets/hero-product.png',
+      cta: [
+        { label: 'Shop Now', primary: true },
+        { label: 'Learn More', primary: false },
+      ],
+    },
+    // Add more slides here if needed
+  ];
 
-export default function HeroBanner() {
   const [current, setCurrent] = useState(0);
   const timeoutRef = useRef(null);
 
@@ -75,4 +75,6 @@ export default function HeroBanner() {
       </div>
     </div>
   );
-} 
+}
+
+export default HeroBanner; 

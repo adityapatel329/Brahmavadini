@@ -1,5 +1,5 @@
 .bestsellers-root {
-  background: #111C2C;
+  
   padding: 64px 0 48px 0;
   color: #fff;
   width: 100%;
@@ -12,13 +12,13 @@
   font-family: 'Cormorant Garamond', serif;
   font-size: 48px;
   font-weight: 600;
-  color: #EAD7B7;
+  color: #1D2A3E;
   margin-bottom: 8px;
 }
 .bestsellers-subtitle {
   font-family: 'Inter', sans-serif;
   font-size: 16px;
-  color: #EAD7B7;
+  color: #1D2A3E;
 }
 .bestsellers-grid {
   display: grid;
@@ -28,7 +28,7 @@
   margin: 0 auto;
 }
 .bestseller-card {
-  background: #181F2B;
+ 
   border: 1.5px solid #E59D3E;
   border-radius: 12px;
   padding: 18px 18px 16px 18px;
@@ -67,13 +67,13 @@
   font-family: 'Cormorant Garamond', serif;
   font-size: 22px;
   font-weight: 600;
-  color: #fff;
+  color: #1D2A3E;
   margin-bottom: 4px;
 }
 .bestseller-subtitle2 {
   font-family: 'Inter', sans-serif;
   font-size: 15px;
-  color: #EAD7B7;
+  color: #516381;
   margin-bottom: 16px;
 }
 .bestseller-bottom-row {
@@ -87,7 +87,7 @@
   font-family: 'Inter', sans-serif;
   font-size: 20px;
   font-weight: 600;
-  color: #fff;
+  color: #516381;
 }
 .bestseller-btn {
   background: #E59D3E;

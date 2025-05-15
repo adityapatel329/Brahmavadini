@@ -9,7 +9,6 @@ import Founder from "./components/Founder/Founder";
 import YagyaKundSpecials from "./components/YagyaKundSpecials/YagyaKundSpecials";
 import Reviews from "./components/Reviews/Reviews";
 import Contact from "./components/Contact/Contact";
-import "./styles.css";
 
 // Layout for the main page components
 function HomePageLayout() {
